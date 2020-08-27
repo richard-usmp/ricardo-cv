@@ -15,13 +15,25 @@
 <body class="w3-light-grey">
     <style>
         html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+        .responsive {
+            width: 100%;
+            height: auto;
+        }
+        .panel{
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+        p{
+            font-size:large;
+        }
     </style>
-    <div class="container">
+    <div class="container-fluid">
         <br>
         <div class="row row-cols-2">  
-            <div class="panel panel-default">
+            <div class="panel panel-default" class="panel">
                 <div class="col"> <!--(1)-->
-                    <img src="img\foto.jpg" height="750" width="550">
+                    <img src="img\foto.jpg" class="responsive" height="750" width="550">
                     <h3><b>Ricardo Enrique León López</b></h3>    
                     <h4><i class="material-icons">perm_identity</i></i> <b>&nbsp;&nbsp;&nbsp;DNI:</b> 70999841</h4>
 	                <h4><i class="fa fa-home fa-fw w3-margin-right w3-large"></i> <b>Dirección:</b> Jr. Moore Nº 265 Int. 101 Magdalena del Mar</h4>
