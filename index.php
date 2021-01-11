@@ -28,17 +28,29 @@
             font-size:large;
         }
     </style>
+    <script>
+        function getEdad(dateString) {
+            let hoy = new Date();
+            let fechaNacimiento = new Date(dateString);
+            let edad = hoy.getFullYear() - fechaNacimiento.getFullYear();
+            let diferenciaMeses = hoy.getMonth() - fechaNacimiento.getMonth();
+            if ( diferenciaMeses < 0 || (diferenciaMeses === 0 && hoy.getDate() < fechaNacimiento.getDate()) ) {
+                edad--;
+            }
+            return edad;
+        }
+    </script>   
     <div class="container-fluid">
         <br>
         <div class="row row-cols-2">  
             <div class="panel panel-default" class="panel">
                 <div class="col"> <!--(1)-->
-                    <img src="img\foto.jpg" class="responsive" height="750" width="550">
-                    <h3><b>Ricardo Enrique León López</b></h3>    
+                    <img alt="" src="img\foto.jpg" class="responsive" height="750" width="550"/>
+                    <h3><b>Ricardo Enrique León López, <script>document.write(getEdad("1999/11/14 11:30:00"));</script> años</b></h3>
                     <h4><i class="material-icons">perm_identity</i></i> <b>&nbsp;&nbsp;&nbsp;DNI:</b> 70999841</h4>
 	                <h4><i class="fa fa-home fa-fw w3-margin-right w3-large"></i> <b>Dirección:</b> Jr. Moore Nº 265 Int. 101 Magdalena del Mar</h4>
 	                <h4><i class="fa fa-phone fa-fw w3-margin-right w3-large"></i><a href="https://wa.link/buipqw"> <b>941439711</b></a></h4>	                
-                    <h4><i class="fa fa-envelope fa-fw w3-margin-right w3-large"></i><a href="mailto:ricardoleon188@gmail.com"> ricardoleon188@gmail.com</a></h4>
+                    <h4><i class="fa fa-envelope fa-fw w3-margin-right w3-large"></i><a href="mailto:ricardoleon188@gmail.com"> ricardoleon 188@gmail .com</a></h4>
                     <hr>
 
                     <h3 class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right"></i>Lenguajes de programación</b></h3>
@@ -115,11 +127,11 @@
                         computadoras, instalación de software y hardware requerido, instalación de nuevas computadoras, etc.</p>
                     </p>
                     <hr>
-                    <h3 class="w3-large"><b><i class="fa fa-certificate fa-fw w3-margin-right"></i></i>Proyectos</b></h3><br>  
-                    <!--FALTA RELLENAR-->
-                    <hr>
+                    <!--h3 class="w3-large"><b><i class="fa fa-certificate fa-fw w3-margin-right"></i></i>Proyectos</b></h3><br>
+
+                    <hr-->
                     <h3 class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right"></i>Conferencias y certificados</b></h3><br>
-                    <a href="//www.slideshare.net/RicardoLenLpez/certificate-238033118" title="Certificate" target="_blank">Certificate</a>
+                    <a href="//www.slideshare.net/RicardoLenLpez/certificate-238033118" title="Certificate" target="_blank">- Certificado de Scrum Foundation</a>
                 </div>
             </div>
         </div>                   
