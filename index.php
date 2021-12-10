@@ -104,7 +104,7 @@
                         <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Agosto 2016 - Actualidad</h6>
                         <p><b>UNIVERSIDAD SAN MARTÍN DE PORRES</b></p>
 			            <p>Facultad de Ingeniería y Arquitectura</p>
-                        <p>Ingeniería de Computación y Sistemas <b>(8° Ciclo)</b></p>
+                        <p>Ingeniería de Computación y Sistemas <b>(9° Ciclo)</b></p>
                         <hr>
                         <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Enero 2008 - Junio 2016</h6>
                         <p><b>ASOCIACIÓN CULTURAL PERUANO BRITÁNICA</b> </p>
